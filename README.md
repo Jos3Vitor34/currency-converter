@@ -1,27 +1,42 @@
-# 💱 Conversor de Moedas em Python
+# Conversor de Moedas 💱
 
-Este projeto converte valores entre diferentes moedas usando a API Frankfurter.
+Um aplicativo desktop simples e eficiente para conversão de moedas em tempo real, construído com Python e Tkinter. O aplicativo utiliza a API pública [Frankfurter](https://www.frankfurter.app/) para obter as taxas de câmbio mais recentes.
 
-## 🚀 Como usar
-1. Clone este repositório:
+## Funcionalidades
+
+- Interface gráfica amigável e fácil de usar.
+- Conversão em tempo real entre várias moedas populares (USD, EUR, BRL, GBP, JPY, AUD, CAD).
+- Tratamento de erros de conexão e de entradas inválidas.
+
+## Pré-requisitos
+
+Certifique-se de ter o Python instalado na sua máquina (versão 3.6 ou superior).
+
+## Como Instalar e Executar
+
+1. Clone o repositório ou faça o download dos arquivos.
+2. Navegue até o diretório do projeto no terminal:
    ```bash
-   git clone https://github.com/seu-usuario/currency-converter.git
-
-2. Instale as dependências:
+   cd conversor-moedas
+   ```
+3. Instale as dependências necessárias:
+   ```bash
    pip install -r requirements.txt
-
-3. Execute o programa:
+   ```
+4. Execute o aplicativo:
+   ```bash
    python converter.py
+   ```
 
-EXEMPLO:
-Digite o valor: 100
-Moeda de origem (ex: BRL): BRL
-Moeda de destino (ex: USD): USD
-Resultado: 100 BRL = 18.50 USD
+## Tecnologias Utilizadas
 
+- **Python**: Linguagem principal.
+- **Tkinter/ttk**: Para a construção da interface gráfica (built-in do Python).
+- **Requests**: Para realizar requisições HTTP para a API de taxas de câmbio.
+- **Frankfurter API**: API open-source para dados de câmbio estrangeiros.
 
-## 🖼️ Interface Gráfica
+## Possíveis Melhorias Futuras
 
-O projeto também possui uma versão com interface gráfica feita em Tkinter:
-
-![Interface gráfica do conversor](https://copilot.microsoft.com/th/id/BCO.18443d6a-d445-41e9-a322-9cfe78563de1.png)
+- Adicionar suporte a mais moedas.
+- Mostrar histórico de conversões ou gráfico de variação de taxa.
+- Alternância para tema escuro.
